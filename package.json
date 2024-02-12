@@ -9,6 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prettier-fix": "prettier --write .",
     "start:dev": "cross-env NODE_ENV=development ts-node-dev -- src/index.ts",
+    "start:test": "cross-env NODE_ENV=development ts-node-dev -- src/server.ts",
     "start:multi": "cross-env NODE_ENV=development-multi ts-node-dev -- src/index.ts",
     "start:prod": "cross-env NODE_ENV=production node dist/main.bundle.js",
     "build": "cross-env NODE_ENV=development webpack --mode=production"
